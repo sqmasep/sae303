@@ -22,10 +22,6 @@ module.exports = {
         test: /\.styl$/,
         use: ["style-loader", "css-loader", "stylus-loader"],
       },
-      {
-        test: /.(wav|mp3|mp4)/,
-        use: "file-loader",
-      },
     ],
   },
 };

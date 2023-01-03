@@ -1,4 +1,4 @@
-export interface Data {
+export interface Benchmark {
   id: string;
   name: string;
   fullname: string;
@@ -26,6 +26,6 @@ export type HeaderTable = Table<"header"> & {
   comment: string;
 };
 export type DatabaseTable = Table<"database"> & { name: string };
-export type DataTable = Table<"data"> & { data: Data[] };
+export type DataTable = Table<"data"> & { data: Benchmark[] };
 
 export type FetchedData = [HeaderTable, DatabaseTable, DataTable];

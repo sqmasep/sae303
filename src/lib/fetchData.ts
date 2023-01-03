@@ -1,9 +1,14 @@
 import axios from "axios";
 import { FetchedData } from "../types/data";
 
-export const getData = async () => {
+export const benchmarkKeys = {
+  all: ["benchmark"],
+  byId: <T>(id: T) => ["benchmark", id],
+};
+
+export const getBenchmark = async () => {
   const { data } = await axios.get<FetchedData>(
-    "https://sat.inesctec.pt/api/v1/data"
+    "http://www.cril.univ-artois.fr/~lecoutre/teaching/jssae/code5/results.json"
   );
-  return data;
+  return data[2].data;
 };
