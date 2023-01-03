@@ -25,7 +25,7 @@ const Home: React.FC = () => {
       <Typography variant='h1'>Home</Typography>
       {isLoading && <h2>Loading...</h2>}
 
-      <Grid container spacing={4}>
+      <Grid container spacing={1}>
         {data?.map(e => (
           <Grid key={e.id} item xs={12} sm={6} md={4} lg={3} xl={2}>
             <Card date={e.updated_at} name={e.name} family={e.family} />
