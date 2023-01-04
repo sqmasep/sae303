@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import BenchmarkProvider from "./context/BenchmarkProvider";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
-import Detail from "./pages/Detail";
+import SolverDetail from "./pages/SolverDetail";
 
 export const queryClient = new QueryClient();
 
@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <BenchmarkProvider>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/:idBenchmark' element={<Detail />} />
+            <Route path='/solver/:solverName' element={<SolverDetail />} />
           </Routes>
         </BenchmarkProvider>
       </QueryClientProvider>

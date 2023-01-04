@@ -6,6 +6,9 @@ let theme = createTheme({
   //     main: "#033",
   //   },
   // },
+  palette: {
+    mode: "light",
+  },
   components: {
     MuiContainer: {
       defaultProps: {
