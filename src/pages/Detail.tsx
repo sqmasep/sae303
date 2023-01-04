@@ -8,12 +8,18 @@ import { Benchmark } from "../types/data";
 
 const Detail: React.FC = () => {
   const { idBenchmark } = useParams();
-  const {} = useQuery(benchmarkKeys.byId(idBenchmark), () => {
-    queryClient
-      .getQueryData<Benchmark[]>(benchmarkKeys.all)
-      ?.find(e => e.id === idBenchmark);
+  const { data } = useQuery(benchmarkKeys.byId(idBenchmark), () => {
+    return (
+      queryClient
+        .getQueryData<Benchmark[]>(benchmarkKeys.all)
+        ?.find(e => e.id === idBenchmark) ?? {}
+    );
   });
-  return <div>Detail</div>;
+  return (
+    <div>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
+  );
 };
 
 export default Detail;
