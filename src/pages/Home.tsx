@@ -70,7 +70,11 @@ const Home: React.FC = () => {
           variant='h5'
           component='h2'
         >
-          slt text d'intro
+          La quatrième compétition internationale de solveurs de contraintes XCSP3 est organisée pour améliorer notre
+          connaissance des composants (par exemple, algorithmes de filtrage, heuristiques, stratégies de recherche, encodage
+          techniques de reformulation et de procédures d'apprentissage) qui sont à l'origine de l'efficacité de la résolution
+          systèmes (appelés solveurs de contraintes dans ce document) pour les contraintes combinatoires
+          problèmes.
         </MotionTypography>
 
         <Typography variant='h3' component='h2' sx={{ mb: 2 }}>
