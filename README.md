@@ -2,9 +2,10 @@
 
 ### Composition de l'équipe
 
-- [Hugo Demont　　　　はじめ](https://github.com/HugoDemont62 "Un idiot") 
-- [Romain Leblond 　　　先生](https://github.com/sqmasep "Un BG")
-- [Mallory Macrez　　　キウ美](https://github.com/RedBusters "Un autre BG")
+- [Hugo Demont](https://github.com/HugoDemont62 ) 
+- [Romain Leblond](https://github.com/sqmasep )
+- [Mallory Macrez](https://github.com/RedBusters)
+
 
 #### Explication du projet
 La quatrième compétition internationale de solveurs de contraintes XCSP3 est organisée pour améliorer notre
